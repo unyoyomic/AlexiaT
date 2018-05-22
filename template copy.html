@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Alexia Talavutis</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+</head>
+<style>
+body, html {
+	height: 98%;
+	margin: 0;
+}
+
+html { 
+	background: url(palm.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.image {
+	background-image: url("pic_one.jpg");
+	height: 99%; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.logo {
+	background-image: url("Logo_alb.jpg");
+	height: 65%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.gif {
+	background-image: url("boomerang.gif");
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.navbar {
+	background-color: black
+}
+
+.navbar-left > img {
+	height: 90px;
+}
+
+.navbar-right {
+	text-align: center;
+	padding: 10px;
+	font-size: 0;
+}
+
+.navbar-right ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.navbar-right ul li {
+	display: inline-block;
+	font-size: 16px;
+}
+
+.navbar-right ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;	
+	padding-top: 25px;
+	padding-left: 10px;
+	transition: color 0.5s;
+}
+
+.navbar-right li {
+    margin-bottom: 10px;
+}
+
+.navigation {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .5s;
+}
+
+.navigation:hover::before {
+    width: 100%;
+    transition: width .5s;
+}
+
+.navigation::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .5s;
+}
+
+.navigation:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+</style>
+
+<body data-spy="scroll" data-target="#my-navbar">
+
+	<!-- Navbar  -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>           
+				</button>
+				<a class="navbar-left" href="template.html#"><img src="Logo_alb.jpg"></a>
+			</div>
+			<div class="collapse navbar-collapse navbar-right" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a class="navigation" href="#music" style="color: white;font-size: 15px;">MUSIC</a>
+					<div class="underline"></div></li>
+					<li><a class="navigation" href="#live" style="color: white;font-size: 15px;">LIVE</a>
+					<div class="underline"></div></li>
+					<li><a class="navigation" href="#news" style="color: white;font-size: 15px;">NEWS</a>
+					<div class="underline"></div></li>
+					<li><a class="navigation" target="_blank" href="https://alexiat.ro/" style="color: white;font-size: 15px;">BLOG</a><div class="underline"></div></li>
+					<li><a class="navigation" target="_blank" href="https://ro-ro.facebook.com/AlexiaTalavutisOficial/" style="color: white"><i class="fab fa-facebook-f"></i></a><div class="underline"></div></li>
+					<li><a class="navigation" target="_blank" href="https://www.instagram.com/alexiat.ro/" style="color: white"><i class="fab fa-instagram"></i></a><div class="underline"></div></li>
+					<li><a class="navigation" target="_blank" href="https://twitter.com/alexiatalavutis?lang=en" style="color: white"><i class="fab fa-twitter"></i></a><div class="underline"></div></li>
+					<li><a class="navigation" target="_blank" href="https://www.youtube.com/user/queenofficial" style="color: white"><i class="fab fa-youtube"></i></a><div class="underline"></div></li>
+					<li><a class="navigation" target="_blank" href="#youtube" style="color: white"><i class="fab fa-soundcloud"></i></a><div class="underline"></div></li>
+					<li><a class="navigation" href="#contact" style="color: white"><i class="far fa-envelope"></i></a><div class="underline"></div></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Primay image -->
+	<div class="image"></div>
+
+	<!-- Logo -->
+	<div class="logo"></div>
+
+	<div class="container">
+		<section style="padding-top: 100px;"></section>
+	</div>
+
+	<!-- Last video -->	
+	<div class="container" style="background-color: black">
+		<section>
+			<div id="music">
+				<div class="row">
+					<div class="col-md-2">
+						<h4 style="color: white">NOW PLAYING</h4>
+					</div>
+					<div class="col-md-2">
+						<h4 style="color: white">NOW PLAYING</h4>
+					</div>
+					<div class="col-md-2">
+						<h4 style="color: white">NOW PLAYING</h4>
+					</div>
+					<div class="col-md-6" style="text-align: right;">
+						<h4 style="color: white">SUBSCRIBE</h4>
+					</div>
+				</div>
+				<div style="text-align: center;">
+					<embed width="800" height="550" src="https://www.youtube.com/v/tgbNymZ7vqY">
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="container">
+			<section style="padding-top: 100px;"></section>
+		</div>
+
+		<!-- News -->	
+		<div class="container">
+			<section>
+				<div id="news" style="padding-bottom: 15px;">
+					<a href="#facebook" style="color: white"><i class="far fa-newspaper fa-lg"></i></a>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="content" style="background-color: black;">
+							<div class="hovereffect">
+							<img class="img-responsive" src="1.jpeg" alt="Car" style="width:100%">
+															<div class="overlay"></div>
+						</div>
+
+							<h4 style="color: white; padding-left: 10px; padding-right: 10px;">Retro</h4>
+							<p style="color: white; padding-left: 10px; padding-right: 10px; padding-bottom: 10px">Lorem ipsum dolor..</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="content" style="background-color: black;">
+							<img class="img-responsive" src="2.jpeg" alt="Car" style="width:100%">
+								<div class="overlay"></div>
+							<h4 style="color: white; padding-left: 10px; padding-right: 10px;">Retro</h4>
+							<p style="color: white; padding-left: 10px; padding-right: 10px; padding-bottom: 10px">Lorem ipsum dolor..</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="content" style="background-color: black;">
+							<img class="img-responsive" src="3.jpeg" alt="Car" style="width:100%">
+								<div class="overlay"></div>
+							<h4 style="color: white; padding-left: 10px; padding-right: 10px;">Retro</h4>
+							<p style="color: white; padding-left: 10px; padding-right: 10px; padding-bottom: 10px">Lorem ipsum dolor..</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="container">
+			<section style="padding-top: 100px;"></section>
+		</div>
+
+		<!-- Instagram -->	
+		<div class="container">
+			<section>
+				<div style="padding-bottom: 15px;">
+					<a href="#instagram" style="color: white"><i class="fab fa-instagram fa-lg"></i></a>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="content" style="background-color: black;">
+							<img class="img-responsive" src="3.jpeg" alt="Car" style="width:100%">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="content" style="background-color: black;">
+							<img class="img-responsive" src="2.jpeg" alt="Car" style="width:100%">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="content" style="background-color: black;">
+							<img class="img-responsive" src="1.jpeg" alt="Car" style="width:100%">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="content" style="background-color: black;">
+							<img class="img-responsive" src="1.jpeg" alt="Car" style="width:100%">
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="container">
+			<section style="padding-top: 100px;"></section>
+		</div>
+
+		<!-- Gif -->	
+		<div class="gif"></div>
+
+		<div class="container">
+			<section style="padding-top: 100px;"></section>
+		</div>
+
+		<!-- Contact -->
+		<div class="container">
+			<section>
+				<div id="contact">
+					<div style="padding-bottom: 15px;">
+						<a href="#contact" style="color: white"><i class="far fa-envelope fa-lg"></i></a>
+					</div>
+					<div class="container text-center" style="background-color: black; padding-top: 10px; padding-bottom: 10px;">
+						<form class="form-inline text-center" style="background-color: black" action="">
+							<div class="form-group" style="text-align: left;">
+								<p style="color: white;">Keep up to date with Alexia's news events and competitions by signing up here... </p>
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="email">Name:</label>
+								<input type="email" class="form-control" id="name" placeholder="NAME"  name="name" style="background-color: black">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="pwd">Email:</label>
+								<input type="password" class="form-control" id="email" placeholder="EMAIL ADDRESS" name="email" style="background-color: black">
+							</div>
+							<button type="submit" class="btn btn-default">SUBMIT</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="container">
+			<section style="padding-top: 100px;"></section>
+		</div>
+
+		<div class="container text-center">
+			<section>
+				<p style="color: white;"><strong>&copy; Copyright Alexia @ 2018</strong></p>
+				<p style="color: white;"><strong>Site by Raluca</strong></p>
+			</section>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script>
+			$('.nav-link').on('click', function() {
+	$('.active-link').removeClass('active-link');
+	$(this).addClass('active-link');
+});
+		</script>
+	</body>
+	</html>
