@@ -1,0 +1,398 @@
+body, html {
+	height: 98%;
+	margin: 0;
+}
+
+html { 
+	background: url(palm.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+} 
+
+.primary-photo {
+	background-image: url("pic_one.jpg");
+	height: 99%; 
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.logo {
+	background-image: url("Logo_alb.jpg");
+	height: 65%;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.gif {
+	background-image: url("boomerang.gif");
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.navbar {
+	background-color: black
+}
+
+.navbar-left > img {
+	height: 90px;
+}
+
+.navbar-right {
+	text-align: center;
+	padding: 10px;
+	font-size: 0;
+}
+
+.navbar-right ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.navbar-right ul li {
+	display: inline-block;
+	font-size: 16px;
+}
+
+.navbar-right ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;	
+	padding-top: 25px;
+	padding-left: 10px;
+	transition: color 0.5s;
+}
+
+.navbar-right li {
+	margin-bottom: 10px;
+}
+
+.navigation {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+}
+
+.navigation::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: white;
+	transition: width .5s;
+}
+
+.navigation:hover::after {
+	width: 100%;
+	transition: width .5s;
+}
+
+.navigation i {
+	color: #FFFFFF;	
+}
+
+.navigation.navigation-tabs {
+	color: #FFFFFF;
+	font-size: 15px;
+}
+
+.news-hover {
+	position: relative;
+}
+
+.news-hover .image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.news-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color:rgb(0,0,0);
+	opacity:0.3;
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .10s ease;
+}
+
+.news-hover:hover .news-overlay {
+	width: 100%;
+}
+
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+#myVideo {
+	right: 0;
+	bottom: 0;
+	min-width: 100%; 
+	height: 47%;
+	-webkit-transform: scaleX(7); 
+	-moz-transform: scaleX(7);
+	-ms-transform: scaleX(7);
+}
+
+.container.container-for-space {
+	padding-top: 100px;
+}
+
+.container.latest-video {
+	background-color: black;
+}
+
+.row.row-latest-video {
+	padding-top: 10px; 
+	padding-bottom: 10px;
+}
+
+.col-md-6.col-md-6-latest-video-left {
+	padding-left: 30px;
+}
+
+.now-playing {
+	color: white;
+}
+
+.col-md-6.col-md-6-latest-video-right {
+	text-align: right;
+	padding-right: 30px;
+}
+
+.news {
+	padding-bottom: 15px;
+}
+
+.news a {
+	color: white;
+}
+
+.img-responsive.row-news {
+	width:100%;
+}
+
+.content.row-news {
+	background-color: black; 
+	padding: 10px;
+}
+
+.content.row-news h4 {
+	color: white; 
+	padding-left: 10px; 
+	padding-right: 10px;
+}
+
+.content.row-news p {
+	color: white; 
+	padding-left: 10px; 
+	padding-right: 10px; 
+	padding-bottom: 10px;
+}
+
+.instagram {
+	padding-bottom: 15px;
+}
+
+.instagram a {
+	color: white;
+}
+
+.img-responsive.first-image {
+	width:100%; 
+	height: 400px;
+}
+
+.img-responsive.second-image {
+	width:100%; 
+	height: 200px;
+}
+
+.img-responsive.third-image {
+	width:100%; 
+	height: 300px;
+}
+
+.img-responsive.fourth-image {
+	width:100%; 
+	height: 280px;
+}
+
+.contact-style {
+	padding-bottom: 15px;
+}
+
+.contact-style a {
+	color: white;
+}
+
+.container.text-center.contact-stuff {
+	background-color: black; 
+	padding-top: 20px; 
+	padding-bottom: 20px;
+}
+
+.form-inline.text-center.contact-background {
+	background-color: black;
+}
+
+.form-group.keep-up {
+	text-align: left;
+}
+
+.form-group.keep-up p {
+	color: white;
+}
+
+.form-control.col-md-4 {
+	background-color: black; 
+	border-radius: 0px;
+}
+
+.form-control {
+	background-color: black; 
+	border-radius: 0px;
+}
+
+.btn.btn-default {
+	border-radius: 0px;
+}
+
+.footer p {
+	color: white;
+}
+
+.instagram-gallery {
+  padding-top: 40px;
+  @media screen and (min-width: 991px) {
+    padding: 60px 30px 0 30px;
+  }
+}
+
+.image-hover {
+	position: relative;
+}
+
+.image-hover .image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color:rgb(0,0,0);
+	opacity:0.3;
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .10s ease;
+}
+
+.image-hover:hover .overlay {
+	width: 100%;
+}
+
+#overlay {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  // Removes blue highlight
+  -webkit-user-select: none;
+  -moz-user-select: none;    
+  -ms-user-select: none; 
+  user-select: none; 
+  img {
+    margin: 0;
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    padding: 5%;
+    @media screen and (min-width:768px) {
+        width: 60%;
+    }
+    @media screen and (min-width:1200px) {
+        width: 50%;
+    }
+  }
+}
+
+#nextButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  &:hover {
+    opacity: 0.7;
+  }
+  @media screen and (min-width:768px) {
+    font-size: 3em;
+  }
+}
+
+#prevButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  &:hover {
+    opacity: 0.7;
+  }
+  @media screen and (min-width:768px) {
+    font-size: 3em;
+  }
+}
+
+#exitButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  &:hover {
+    opacity: 0.7;
+  }
+  @media screen and (min-width:768px) {
+    font-size: 3em;
+  }
+}
