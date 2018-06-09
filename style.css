@@ -80,6 +80,10 @@ html {
 	transition: color 0.5s;
 }
 
+.navbar-inverse .navbar-nav>li>a {
+    color: #FFFFFF;
+}
+
 .navbar-right li {
 	margin-bottom: 10px;
 }
@@ -171,6 +175,8 @@ html {
 
 .container.latest-video {
 	background-color: black;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .row.row-latest-video {
@@ -200,7 +206,8 @@ html {
 }
 
 .img-responsive.row-news {
-	width:100%;
+	width:500px;
+	height: 280px;
 }
 
 .content.row-news {
@@ -387,7 +394,7 @@ html {
   font-size: 2em;
   transition: opacity 0.8s;
   position: absolute;
-  top: 15px;
+  top: 100px;
   right: 15px;
   &:hover {
     opacity: 0.7;
@@ -396,3 +403,4 @@ html {
     font-size: 3em;
   }
 }
+
