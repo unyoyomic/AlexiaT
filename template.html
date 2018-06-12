@@ -31,13 +31,13 @@
 			</div>
 			<div class="collapse navbar-collapse navbar-right myNavbar">
 				<ul class="nav navbar-nav">
-					<li><a class="navigation navigation-tabs" href=".music">MUZICA</a>
+					<li><a class="navigation navigation-tabs" href="#music">MUZICA</a>
 						<div class="underline"></div>
 					</li>
 					<li><a class="navigation navigation-tabs" href=".live">CONCERTE</a>
 						<div class="underline"></div>
 					</li>
-					<li><a class="navigation navigation-tabs" href=".news">NOUTATI</a>
+					<li><a class="navigation navigation-tabs" href="#news">NOUTATI</a>
 						<div class="underline"></div>
 					</li>
 					<li><a class="navigation" target="_blank" href="https://ro-ro.facebook.com/AlexiaTalavutisOficial/"><i class="fab fa-facebook-f"></i></a>
@@ -61,10 +61,12 @@
 	</nav>
 
 	<!-- Primay image -->
-	<div class="primary-photo"></div>
+	<div class="primary-photo">
+		<a href="#next" class="scroll-down" address="true"></a>
+	</div>
 
 	<!-- Logo -->
-	<div class="logo"></div>
+	<div class="logo" id="next"></div>
 
 	<section>
 		<div class="container container-for-space"></div>
@@ -74,7 +76,7 @@
 	<section>
 		<div data-aos="fade-right" data-aos-duration="1000">
 			<div class="container latest-video">
-				<div class="music">
+				<div id="music">
 					<div class="row row-latest-video">
 						<div class="col-md-6 col-md-6-latest-video-left">
 							<h4 class="now-playing">NOW PLAYING</h4>
@@ -98,8 +100,8 @@
 		<!-- News -->	
 		<section>
 			<div class="container">
-				<div class="news">
-					<a href="#"><i class="far fa-newspaper fa-2x"></i></a>
+				<div id="news">
+					<a href="template2.html"><i class="far fa-newspaper fa-2x"></i></a>
 				</div>
 				<div class="row">
 					<div class="col-md-4">
@@ -362,6 +364,31 @@ $exitButton.click(function() {
 // Fade out the overlay
 $("#overlay").fadeOut("slow");
 });
+
+var $window = $(window);
+var $elem = $(".anim-typewriter")
+
+function isScrolledIntoView($elem, $window) {
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+$(document).on("scroll", function () {
+    if (isScrolledIntoView($elem, $window)) {
+        $elem.addClass("animate")
+    }
+});
+
+$(function() {
+    $('.scroll-down').click (function() {
+      $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+      return false;
+    });
+  });
 </script>
 </body>
 </html>
