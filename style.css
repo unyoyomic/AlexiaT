@@ -189,7 +189,12 @@ body {
 }
 
 .now-playing {
+	color:white;
+}
+
+.subscribe a{
 	color: white;
+	text-decoration: none;
 }
 
 .col-md-6.col-md-6-latest-video-right {
@@ -197,17 +202,21 @@ body {
 	padding-right: 30px;
 }
 
-#news {
+.alexias-news {
 	padding-bottom: 15px;
 }
 
-#news a {
+.alexias-news a {
 	color: white;
 }
 
 .img-responsive.row-news {
 	width:500px;
 	height: 280px;
+}
+
+.col-md-4.col-news a{
+	text-decoration: none;
 }
 
 .content.row-news {
@@ -421,6 +430,7 @@ body {
     transform: translateY(-50%); 
     color: white; 
     font-weight:bold;  
+    background: rgba(0, 0, 0, 0.2);
 }
 
 /* Animation */
